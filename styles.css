@@ -2,16 +2,126 @@
 	box-sizing: border-box;
     font-family: sans-serif;
     font-weight: bold;
-    color: black;
+    color: red;
     font-size: 20px;
 }
 
 html, body {    
     margin: 0;
-    background-color: black;
+    background-color: white;
     display: flex;
-    flex-direction: row;
-    width: 800px;
-    height: 600px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding-top: 1em;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 2em;
+}
+
+form {
+    font-size: 0.8em;
+}
+
+input {
+    border: none;
+    background-color: lightgrey;
+    border-radius: 0.4em;
+    padding: 0.4em;
+}
+
+input::placeholder {
+    font-size: 0.8em;
+}
+
+input:hover {
+    background-color: #9FE2BF;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.error-msg {
+    z-index: 1;
+    font-size: 0.6em;
+    margin-right: 1em;
+    display: none;
+}
+
+.submit-btn {
+    width: 4em;
+    height: 2em;
+    border-radius: 0.4em;
+    border-color: black;
+    border:  none;
+    background-color: white;
+}
+
+.submit-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4em;
+    padding-top: 0em;
+}
+
+#diff-font-color {
+    color: black;
+}
+
+.condition {
+    align-self: flex-start;
+    font-size: 1.2em;
+}
+
+.location {
+    align-self: flex-end;
+    margin-right: 4em;
+    font-size: 1.7em;
+}
+
+.degrees {
+    align-self: center;
+    font-size: 3.4em;
+    margin: 0.4em;
+    text-decoration: underline;
+}
+
+.feels-like {
+    align-self: flex-start;
+    font-size: 1em;
+}
+
+.wind-mph {
+    align-self: flex-end;
+    font-size: 0.8em;
+}
+
+.humidity {
+    align-self: center;
+    font-size: 0.8em;
+}
+
 
