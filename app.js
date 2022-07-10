@@ -15,7 +15,7 @@ const displayError = () => {
     err.style.display = 'block';
 };
 
-button.addEventListener('click',function(){
+const getData = () => { 
   fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&units=metric&appid=50a7aa80fa492fa92e874d23ad061374')
   .then(response => response.json())
   .then(data => {
@@ -31,12 +31,12 @@ button.addEventListener('click',function(){
     degrees.innerHTML = tempValue+'°C';
     feelsLike.innerHTML = 'feels like: '+feelValue+'°C';
     windMph.innerHTML = 'wind: '+windValue+' mph';
-    humidity.innerHTML = 'humidity: '+humidValue+' %';
-    indputValue ="";
+    humidity.innerHTML = 'humidity:  '+humidValue+'%';
     err.style.display = 'none';
 
   })
   .catch(displayError)
+};
 
-});
+button.addEventListener('click', getData)
 
