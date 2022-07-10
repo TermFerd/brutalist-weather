@@ -4,27 +4,28 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/vdi4hpk.css">
 	<title>Brutalist Weather</title>
 </head>
 <body>
 	<div class="container">
 		<div class="nav">
-			<form>    
-		       <input class="search" type="text" placeholder="Search city..."/>
-		        	<button class="submit-btn">Go</button>
+			<form class="form">    
+		       <input class="search" type="text" id="search" placeholder="Search city..."/>
+		       <input type=button value="Go" class="submit-btn" id="submitBtn"/>
 	        </form>
-		    <span class="error-msg">No matching location found!</span>
+		    <span class="error-msg" id="error-msg">No matching location found!</span>
         </div>
 	    <div class="info">
-         	<p class="condition">sunny</p>
-         	<h1 class="location">london, uk</h1>
-       		<span class="degrees">69°C</span>
-      		<p class="feels-like" id="diff-font-color">feels like: 70°C</p>
-       		<p class="wind-mph" id="diff-font-color">wind: 5 mph</p>
-         	<p class="humidity" id="diff-font-color">humidity: 69%</p>
+         	<p class="desc"></p>
+         	<h1 class="place"></h1>
+       		<span class="degrees"></span>
+      		<p class="feels-like" id="diff-font-color"></p>
+       		<p class="wind-mph" id="diff-font-color"></p>
+         	<p class="humidity" id="diff-font-color"></p>
       	</div>
 	</div>
-<script src="scripts.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
 

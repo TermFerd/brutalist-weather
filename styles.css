@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Ubuntu;
     font-weight: bold;
     color: red;
     font-size: 20px;
@@ -57,10 +57,13 @@ input:focus {
 }
 
 .error-msg {
+    display: none;
     z-index: 1;
     font-size: 0.6em;
     margin-right: 1em;
-    display: none;
+    color: yellow;
+    background-color: black;
+    padding: 0.6em;
 }
 
 .submit-btn {
@@ -69,7 +72,8 @@ input:focus {
     border-radius: 0.4em;
     border-color: black;
     border:  none;
-    background-color: white;
+    background-color: blue;
+    color: white;
 }
 
 .submit-btn:hover {
@@ -91,14 +95,13 @@ input:focus {
     color: black;
 }
 
-.condition {
+.desc {
     align-self: flex-start;
     font-size: 1.2em;
-    color: blue;
     text-decoration: underline;
 }
 
-.location {
+.place {
     align-self: flex-end;
     margin-right: 4em;
     font-size: 1.7em;
@@ -115,6 +118,7 @@ input:focus {
     align-self: flex-start;
     font-size: 1em;
     padding-left: 4em;
+    font-style: italic;
 }
 
 .wind-mph {
