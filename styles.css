@@ -94,24 +94,27 @@ input:focus {
 .condition {
     align-self: flex-start;
     font-size: 1.2em;
+    color: blue;
+    text-decoration: underline;
 }
 
 .location {
     align-self: flex-end;
     margin-right: 4em;
     font-size: 1.7em;
+    text-decoration: line-through;
 }
 
 .degrees {
     align-self: center;
     font-size: 3.4em;
     margin: 0.4em;
-    text-decoration: underline;
 }
 
 .feels-like {
     align-self: flex-start;
     font-size: 1em;
+    padding-left: 4em;
 }
 
 .wind-mph {
